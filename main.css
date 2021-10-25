@@ -15,6 +15,46 @@
 
 /*-------------------------- Content 5------------------------- */
 
+:root{
+  --main_alignment: center;
+}
+
+.main-container {
+    margin: .5rem;
+    display: grid;
+    grid-gap: 0.2rem;
+    border-radius: 0.1rem;
+    justify-content: var(--main_alignment);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas:
+    "content-1"
+    "content-2"
+    "content-3"
+    "content-4"
+  }
+  
+  .content-1 {
+    background-color: #f18282;
+    grid-area: content-1;
+  }
+  
+  .content-2 {
+    background: rgb(109, 109, 200);
+    grid-area: content-2;
+  }
+  
+  .content-3 {
+    background: rgb(241, 241, 200);
+    grid-area: content-3;
+  }
+  
+  .content-4 {
+    background: rgb(84, 209, 200);
+    grid-area: content-4;
+  }
+
+  
 
 
 /*-------------------------- Device Breakpoints------------------------- */
@@ -27,11 +67,24 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    grid-template-areas:
+    "content-1 content-2"
+    "content-3 content-4"  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    grid-template-areas:
+    "content-1 content-2 content-3 content-4"
+
+    
+  }
 
 }
 
