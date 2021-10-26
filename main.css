@@ -7,10 +7,7 @@
 /* Event Planner */
 /* How it was built */
 /* @media queries device breakpoints */
-/* Template */
 
-
-/*-------------------------- Template------------------------- */
 
 :root{
   --main_alignment: center;
@@ -28,81 +25,70 @@
     grid-template-rows: 0.5fr;
     grid-template-areas:
     "nav_bar nav_bar"
-    "content_1 content_1"
-    "content_2 content_2"
-    "content_3 content_3"
-    "content_4 content_4"
+    "main_graph main_graph"
+    "highlights highlights"
+    "event_planner event_planner"
+    "how_built how_built"
 }
   
 /*-------------------------- Nav Bar------------------------- */
 
 .nav_bar {
+  background-color: teal;
   grid-area: nav_bar;
-  grid-column-start: 2;
-  grid-column-end: 2;
 
 }
+/*-------------------------- Main Graph------------------------- */
 
-/*-------------------------- Content 1------------------------- */
-
-.content_1 {
+.main_graph {
   background-color: #f18282;
-  grid-area: content_1;
+  grid-area: main_graph;
 }
 
-/*-------------------------- Content 2------------------------- */
+/*--------------------------  Highlights------------------------- */
 
 
-.content_2 {
+.highlights {
   background: rgb(109, 109, 200);
-  grid-area: content_2;
+  grid-area: highlights;
 }
 
-/*-------------------------- Content 3------------------------- */
+/*-------------------------- Event Planner------------------------- */
 
 
-.content_3 {
+.event_planner {
   background: rgb(241, 241, 200);
-  grid-area: content_3;
+  grid-area: event_planner;
 }
 
-/*-------------------------- Content 4------------------------- */
+/*-------------------------- How it was built------------------------- */
 
-.content_4 {
+.how_built {
   background: rgb(84, 209, 200);
-  grid-area: content_4;
+  grid-area: how_built;
 }
-
-
-
 
 /*-------------------------- Device Breakpoints------------------------- */
 
-
-/* Small devices (landscape phones, 576px and up) */
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-.main-container {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.8fr;
-  grid-template-areas:
-  "nav_bar nav_bar"
-  "content_1 content_2"
-  "content_3 content_4"
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    grid-template-areas:
+      "nav_bar nav_bar"
+      "main_graph highlights"
+      "event_planner how_built";
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-.main-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr;
-  grid-template-areas:
-  "nav_bar nav_bar nav_bar nav_bar"
-  "content_1 content_2 content_3 content_4"  
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr;
+    grid-template-areas:
+      "nav_bar nav_bar nav_bar nav_bar"
+      "main_graph highlights event_planner how_built";
+  }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) {
-
-} */
