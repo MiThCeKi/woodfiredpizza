@@ -16,8 +16,8 @@ function showGraphHighlights () {
 }
 showMainGraph()
 showGraphHighlights()
-
-// ideally, I would have some sort of listen or way to capture
+// to keep DRY, I would have some sort of listen or way to capture
 // what I clicked and then feed that into the ID
+//should I use the ${}?
 // I'd also have to set up that when this happens to hide the current one.
 // OR I could set up a boolean ?
