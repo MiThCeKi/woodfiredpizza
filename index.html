@@ -30,8 +30,8 @@
     <body>
         <div class = "page-container">
             <div class="nav_bar">
-                <a title='Click to show the Main Graph' href='#' onclick="showFunction()"; class='nav__bar__items'>Main Temperature</a>
-                <a href="www.google.com" class="nav__bar__items">Graph Highlights</a>
+                <a title='Click to show the Main Graph' href='#' onclick="showMainGraph()"; class='nav__bar__items'>Main Temperature</a>
+                <a title='Click to show the Graph Highlights' href='#' onclick="showGraphHighlights()"; class="nav__bar__items">Graph Highlights</a>
                 <a href="www.google.com" class="nav__bar__items">Event Planner</a>
                 <a href="www.google.com" class="nav__bar__items">How it was built</a>
             </div>
@@ -43,7 +43,7 @@
             </div>
 <!-- -------------------------- Highlights-------------------------- -->
 
-            <div class="highlights">
+            <div id='GraphHighlights' class="highlights">
                 <h1>Graph Highlights</h1>
             </div>
 <!-- -------------------------- Event Planner-------------------------- -->

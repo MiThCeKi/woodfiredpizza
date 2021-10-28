@@ -39,7 +39,6 @@ body {
 
 
 /*-------------------------- Hidden------------------------- */
-/* haven't used this */
 .hidden {
   display: none;
 }
@@ -55,7 +54,7 @@ body {
   font-size: medium;
 }
 
-/*-------------------------- Main Graph------------------------- */
+/*-------------------------- M ain Graph------------------------- */
 
 .main_graph {
   background-color: #f18282;
@@ -79,6 +78,11 @@ body {
   background: rgb(109, 109, 200);
   grid-area: highlights;
   display: none;
+}
+
+.show_GraphHighlights {
+  background: rgb(109, 109, 200);
+  grid-area: highlights;
 }
 
 .highlights h1{
@@ -122,8 +126,6 @@ body {
       "main_graph highlights"
       "event_planner how_built";
   }
-
-
 }
 
 /* Large devices (desktops, 992px and up) */
