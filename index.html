@@ -19,6 +19,7 @@
         <!--jQuery Content Delivery Network-->
         <script src="jquery-3.6.0.min.js"></script>
         
+        <script type = "text/javascript" src="hidden.js"></script>  
 
         <!--CSS Stylesheets-->
         <link rel="stylesheet" href="main.css" >        
@@ -29,7 +30,7 @@
     <body>
         <div class = "page-container">
             <div class="nav_bar">
-                <a href="www.google.com" class="nav__bar__items">Main Graph</a>
+                <a title='Click to show the Main Graph' href='#' onclick="showFunction()"; class='nav__bar__items'>Main Temperature</a>
                 <a href="www.google.com" class="nav__bar__items">Graph Highlights</a>
                 <a href="www.google.com" class="nav__bar__items">Event Planner</a>
                 <a href="www.google.com" class="nav__bar__items">How it was built</a>
@@ -37,7 +38,7 @@
 
 <!-- -------------------------- Main Graph-------------------------- -->
 
-            <div class="main_graph">
+            <div id='MainGraph' class="main_graph">
                 <h1>Main Graph</h1>
             </div>
 <!-- -------------------------- Highlights-------------------------- -->
@@ -58,10 +59,7 @@
 
 <!--Practicing Display None / Hidden / JS-->
 
-            <script type="hidden.js">
 
-
-            </script>
         </div>
 
     </body>

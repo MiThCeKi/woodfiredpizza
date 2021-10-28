@@ -63,6 +63,11 @@ body {
   display: none;
 }
 
+.show_main_graph {
+  background-color: #f18282;
+  grid-area: main_graph;
+}
+
 .main_graph h1{
   display: grid;
   justify-content: center;
