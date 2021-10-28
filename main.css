@@ -8,7 +8,6 @@
 /* How it was built */
 /* @media queries device breakpoints */
 
-
 :root{
   --main_alignment: center;
 }
@@ -61,11 +60,13 @@ body {
 .main_graph {
   background-color: #f18282;
   grid-area: main_graph;
+  display: none;
 }
 
 .main_graph h1{
   display: grid;
   justify-content: center;
+  
 }
 /*--------------------------  Highlights------------------------- */
 
@@ -73,6 +74,7 @@ body {
 .highlights {
   background: rgb(109, 109, 200);
   grid-area: highlights;
+  display: none;
 }
 
 .highlights h1{
@@ -86,6 +88,7 @@ body {
 .event_planner {
   background: rgb(241, 241, 200);
   grid-area: event_planner;
+  display: none;
 }
 
 .event_planner h1{
@@ -97,6 +100,7 @@ body {
 .how_built {
   background: rgb(84, 209, 200);
   grid-area: how_built;
+  display: none;
 }
 .how_built h1{
   display: grid;
