@@ -7,6 +7,7 @@ function showMainGraph () {
   showMainGraph.className += 'show_main_graph'
 }
 
+
 function showGraphHighlights () {
   console.log('indicator for showGraphHighlights')
   const hideMainGraph = document.getElementById('MainGraph')
