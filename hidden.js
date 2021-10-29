@@ -13,16 +13,19 @@ window.onload = () => {
   activePage.classList.remove('hidden')
 }
 
+//try to get a console.log printout of something I click on. 
 //make this more DRY by using event listeners at some point.
+
 function showGraphHighlights () {
   activePage.classList.add('hidden')
   activePage = document.querySelector('#GraphHighlights')
   activePage.classList.remove('hidden')
+  console.log(activePage)
 }
 
-
-// to keep DRY, I would have some sort of listen or way to capture
-// what I clicked and then feed that into the ID
-//should I use the ${}?
-// I'd also have to set up that when this happens to hide the current one.
-// OR I could set up a boolean ?
+function showMainGraph () {
+  activePage.classList.add('hidden')
+  activePage = document.querySelector('#MainGraph')
+  activePage.classList.remove('hidden')
+  console.log(activePage)
+}
