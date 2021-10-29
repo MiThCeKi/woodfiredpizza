@@ -40,7 +40,7 @@ body {
 
 /*-------------------------- Hidden------------------------- */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /*-------------------------- Nav Bar------------------------- */
@@ -54,12 +54,11 @@ body {
   font-size: medium;
 }
 
-/*-------------------------- M ain Graph------------------------- */
+/*-------------------------- Main Graph------------------------- */
 
 .main_graph {
   background-color: #f18282;
   grid-area: main_graph;
-  display: none;
 }
 
 .show_main_graph {
@@ -77,7 +76,6 @@ body {
 .highlights {
   background: rgb(109, 109, 200);
   grid-area: highlights;
-  display: none;
 }
 
 .show_GraphHighlights {
@@ -108,7 +106,6 @@ body {
 .how_built {
   background: rgb(84, 209, 200);
   grid-area: how_built;
-  display: none;
 }
 .how_built h1{
   display: grid;
