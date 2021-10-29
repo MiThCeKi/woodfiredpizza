@@ -28,7 +28,7 @@ function showMainGraph () {
   activePage.classList.remove('hidden')
 }
 
-window.addEventListener('click', function (event) {
+window.addEventListener('click', (event) => {
   wantedElement = event.target
   console.log(wantedElement)
   console.log(wantedElement.id)
