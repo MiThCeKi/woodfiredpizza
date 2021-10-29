@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!--jQuery Content Delivery Network-->
-        <script src="jquery-3.6.0.min.js"></script>
         
         <!--External js file-->
         <script type = "text/javascript" src="hidden.js"></script>  
@@ -31,10 +30,10 @@
     <body>
         <div class = "page-container">
             <div class="nav_bar">
-                <a title='Click to show the Main Graph' href='#' onclick="showMainGraph()"; class='nav__bar__items'>Main Temperature</a>
-                <a title='Click to show the Graph Highlights' href='#' onclick="showGraphHighlights()"; class="nav__bar__items">Graph Highlights</a>
-                <a href="www.google.com" class="nav__bar__items">Event Planner</a>
-                <a href="www.google.com" class="nav__bar__items">How it was built</a>
+                <a id = 'MainGraphNav' title='Click to show the Main Graph' href='#' onclick="showMainGraph()"; class='nav__bar__items'>Main Temperature</a>
+                <a id = 'GraphHighlightsNav' title='Click to show the Graph Highlights' href='#' onclick="showGraphHighlights()"; class="nav__bar__items">Graph Highlights</a>
+                <a id = 'EventPlannerNav' title='Click to show the Event Planner'class="nav__bar__items">Event Planner</a>
+                <a id = 'HowBuiltNav' title='Click to show the How it was Built Page' class="nav__bar__items">How it was built</a>
             </div>
 
 <!-- -------------------------- Main Graph-------------------------- -->

@@ -20,19 +20,20 @@ function showGraphHighlights () {
   activePage.classList.add('hidden')
   activePage = document.querySelector('#GraphHighlights')
   activePage.classList.remove('hidden')
-  console.log(activePage)
 }
 
 function showMainGraph () {
   activePage.classList.add('hidden')
   activePage = document.querySelector('#MainGraph')
   activePage.classList.remove('hidden')
-  console.log(activePage)
 }
 
 window.addEventListener('click', function (event) {
-  console.log(event.target)
+  wantedElement = event.target
+  console.log(wantedElement)
+  console.log(wantedElement.id)
 })
+
 
 // function genericShow (){
 //   activePage = document.querySelector('')
