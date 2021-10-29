@@ -32,6 +32,8 @@ window.addEventListener('click', (event) => {
   wantedElement = event.target
   console.log(wantedElement)
   console.log(wantedElement.id)
+  idOfWantedElement = wantedElement.id
+  return idOfWantedElement
 })
 
 
