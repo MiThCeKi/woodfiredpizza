@@ -36,11 +36,12 @@ window.addEventListener('click', (event) => {
   return idOfWantedElement
 })
 
+let idOfWantedElement
+
 function ShowClickedPage () {
   idOfWantedElement.classList.remove('hidden')
+  //need to have something adding the other. But how do I get the id
+  //of an item that I haven't clicked.
 }
-// function showMainGraph () {
-//   activePage.classList.add('hidden')
-//   activePage = document.querySelector('#MainGraph')
-//   activePage.classList.remove('hidden')
-// }
+// noticed a small side effect. Everything that is clicked has its id printed in 
+//console.
