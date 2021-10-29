@@ -36,7 +36,11 @@ window.addEventListener('click', (event) => {
   return idOfWantedElement
 })
 
-
-// function genericShow (){
-//   activePage = document.querySelector('')
-//}
+function ShowClickedPage () {
+  idOfWantedElement.classList.remove('hidden')
+}
+// function showMainGraph () {
+//   activePage.classList.add('hidden')
+//   activePage = document.querySelector('#MainGraph')
+//   activePage.classList.remove('hidden')
+// }
