@@ -29,3 +29,11 @@ function showMainGraph () {
   activePage.classList.remove('hidden')
   console.log(activePage)
 }
+
+window.addEventListener('click', function (event) {
+  console.log(event.target)
+})
+
+// function genericShow (){
+//   activePage = document.querySelector('')
+//}
