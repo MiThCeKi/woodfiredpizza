@@ -36,12 +36,11 @@ window.addEventListener('click', (event) => {
   return idOfWantedElement
 })
 
-let idOfWantedElement
 
 function ShowClickedPage () {
   idOfWantedElement.classList.remove('hidden')
   //need to have something adding the other. But how do I get the id
-  //of an item that I haven't clicked.
+  //of an itdem that I haven't clicked.
 }
 // noticed a small side effect. Everything that is clicked has its id printed in 
 //console.
