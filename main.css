@@ -75,7 +75,6 @@ body {
   grid-area: highlights;
 }
 
-
 .highlights h1{
   display: grid;
   justify-content: center;
@@ -88,7 +87,6 @@ body {
   background: rgb(241, 241, 200);
   grid-area: event_planner;
 }
-
 
 .event_planner h1{
   display: grid;
