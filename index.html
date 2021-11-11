@@ -32,7 +32,7 @@
             <div class="nav_bar">
                 <a id = 'MainGraphNav' title='Click to show the Main Graph' href='#' onclick="showMainGraph()"; class='nav__bar__items'>Main Temperature</a>
                 <a id = 'GraphHighlightsNav' title='Click to show the Graph Highlights' href='#' onclick="showGraphHighlights()"; class="nav__bar__items">Graph Highlights</a>
-                <a id = 'EventPlannerNav' title='Click to show the Event Planner'class="nav__bar__items">Event Planner</a>
+                <a id = 'EventPlannerNav' title='Click to show the Event Planner' href='#' onclick="showEventPlanner()"; class="nav__bar__items">Event Planner</a>
                 <a id = 'HowBuiltNav' title='Click to show the How it was Built Page' class="nav__bar__items">How it was built</a>
             </div>
 
@@ -50,7 +50,20 @@
 
             <div id='EventPlanner' class="hidden event_planner">
                 <h1>Event Planner</h1>
+                    <form id="event_form">
+                        <label>How many people are attending?</label>
+
+                        <input type="number">
+
+                        <label>When are you hosting the event?</label>
+
+                        <input type="datetime">
+
+                        <button type="submit">Let's make some Pizza! </button>
+
+                    </form>
             </div>
+    
 <!-- -------------------------- How it was built-------------------------- -->
                
             <div class="hidden how_built">

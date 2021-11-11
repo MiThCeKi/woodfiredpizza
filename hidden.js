@@ -28,9 +28,16 @@ function showMainGraph () {
   activePage.classList.remove('hidden')
 }
 
+function showEventPlanner () {
+  activePage.classList.add('hidden')
+  activePage = document.querySelector('#EventPlanner')
+  activePage.classList.remove('hidden')
+}
+
 window.addEventListener('click', (event) => {
   wantedElement = event.target
   idOfWantedElement = wantedElement.id
+  console.log(wantedElement.id)
   return idOfWantedElement
 })
 

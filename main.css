@@ -61,16 +61,13 @@ body {
   grid-area: main_graph;
 }
 
-.show_main_graph {
-  background-color: #f18282;
-  grid-area: main_graph;
-}
 
 .main_graph h1{
   display: grid;
   justify-content: center;
   
 }
+
 /*--------------------------  Highlights------------------------- */
 
 .highlights {
@@ -78,10 +75,6 @@ body {
   grid-area: highlights;
 }
 
-.show_GraphHighlights {
-  background: rgb(109, 109, 200);
-  grid-area: highlights;
-}
 
 .highlights h1{
   display: grid;
@@ -94,8 +87,8 @@ body {
 .event_planner {
   background: rgb(241, 241, 200);
   grid-area: event_planner;
-  display: none;
 }
+
 
 .event_planner h1{
   display: grid;
