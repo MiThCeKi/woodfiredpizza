@@ -7,13 +7,17 @@ event_planner_form.addEventListener('submit', function (e) =>{
   
   const formData = new FormData(event_planner_form)
 
-  fetch ('<some address>, {
-    method: 'post',
-    body: 'event_planner_form',
+  const jsonPayload = JSON.stringify(Object.fromEntries(formData));
+
+  fetch ('<MOCK-API-PLACEHOLDER>',  {
+      method: 'post',
+      body: 'jsonPayload',
   }).then(function (response) {
     console.log(response.text)
     console.log(response.body)
-    return response.text
-  }
+    return response.text;
+  }).catch(function (error){
+    console.error(error);
+  })
 
 })
