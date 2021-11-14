@@ -11,8 +11,14 @@ event_planner_form.addEventListener('submit', function (e) {
     method: 'post',
     body: 'jsonPayload',
   }).then(function (response) {
-    console.log('its working!', response);
-    return response.json()
+    if (response.ok) {
+      console.log('its working!', response);
+      return response.json();
+    } else {
+      return Promise.reject(response);
+    }
+  }).then(function (data) {
+    console.log(data);
   }).catch(function (error){
     console.warn('something is a foot', error)
   })
