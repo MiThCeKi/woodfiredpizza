@@ -16,11 +16,14 @@ event_planner_form.addEventListener('submit', function (e) {
       // .json() is a method that creates a js object from the JSON body. 
       return response.json();
     } else {
+
       return Promise.reject(response);
     }
   }).then(function (data) {
     console.log(data);
   }).catch(function (error){
     console.warn('something is a foot', error)
+    // what should I do here after an error is found. Can I perform any preprogrammed steps to handle it and recover?
   })
 });
+
