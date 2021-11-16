@@ -7,12 +7,13 @@ event_planner_form.addEventListener('submit', function (e) {
   const formData = new FormData(event_planner_form);
   const jsonPayload = JSON.stringify(Object.fromEntries(formData));
   
-  fetch('https://6191267b41928b001768ff71.mockapi.io/wfp/pizza', {
-    method: 'post',
-    body: 'jsonPayload',
+  fetch('https://6191267b41928b001768ff71.mockapi.io/wfp/pizza',{method: 'post',body: 'jsonPayload',
+
   }).then(function (response) {
+    // response.ok returns a truthy(?) if the response returned successfully
     if (response.ok) {
       console.log('its working!', response);
+      // .json() is a method that creates a js object from the JSON body. 
       return response.json();
     } else {
       return Promise.reject(response);
