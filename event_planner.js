@@ -11,9 +11,10 @@ event_planner_form.addEventListener('submit', function (e) {
   fetch('https://6191267b41928b001768ff71.mockapi.io/wfp/pizza',{method: 'post',body: 'jsonPayload',
 
   }).then(function (response) {
-    // response.ok returns a truthy(?) if the response returned successfully
+    // response.ok returns a truthy if the response returned successfully
     if (response.ok) {
       console.log('its working!', response);
+      // so is this where I would do the business logic of calculating #of pizzas etc.? and then use those variables to display CSS?
       // .json() is a method that creates a js object from the JSON body. 
       return response.json();
     } else {
@@ -29,4 +30,3 @@ event_planner_form.addEventListener('submit', function (e) {
     // I'm thinking like if the connection is down for a moment - what error would arrive - and then we put in a wait and then run the function again.
   })
 });
-
