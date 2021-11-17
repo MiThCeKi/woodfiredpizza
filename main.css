@@ -6,6 +6,7 @@
 /* Graph Highlights*/
 /* Event Planner */
 /* How it was built */
+/* Event Details */
 /* @media queries device breakpoints */
 
 :root{
@@ -35,6 +36,7 @@ body {
   "highlights"
   "event_planner"
   "how_built"
+  "event_details"
 }
 
 
@@ -102,6 +104,20 @@ body {
   display: grid;
   justify-content: center;
 }
+
+/*-------------------------- Event Details------------------------- */
+
+.event_details {
+  background: rgb(84, 209, 200);
+  grid-area: event_details;
+}
+.event_details h1{
+  display: grid;
+  justify-content: center;
+}
+
+
+
 /*-------------------------- Device Breakpoints------------------------- */
 
 /* Medium devices (tablets, 768px and up) */

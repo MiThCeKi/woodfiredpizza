@@ -20,6 +20,8 @@ function showGraphHighlights () {
   activePage.classList.add('hidden')
   activePage = document.querySelector('#GraphHighlights')
   activePage.classList.remove('hidden')
+  const item_to_render = "Do you see this text?";
+  document.getElementById("fill").innerHTML = item_to_render;
 }
 
 function showMainGraph () {
