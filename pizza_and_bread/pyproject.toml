@@ -11,6 +11,9 @@ fastapi = "^0.111.0"
 starlette = "^0.37.2"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
