@@ -7,6 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+fastapi = "^0.111.0"
+starlette = "^0.37.2"
 
 
 [build-system]
