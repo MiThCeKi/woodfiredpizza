@@ -11,22 +11,20 @@ import pandas as pd
 app  = FastAPI()
 
 #this end point handles a get request. 
-@app.get("/pizza/get_temperature", response_model=TemperatureRecord, tags=["pizza_temperature"])
-async def print_text(text)-->pd.DataFrame:
+@app.get("/pizza/get_temperature", response_model=DTO_TemperatureRecord, tags=["pizza_temperature"])
+async def print_text(text)--> DTO_TemperatureRecord:
     """
     docstring: Defining with async in case I have concurrent requests
-    Returns: a dictionary with a message key and a value of "going to make pizza and bread"
+    Returns: a dictionary 
     """
-    text: str
-    raw_data = TemperatureRecord
 
-    
-    #data = some transformation of TemperatureRecord
+
+    #data = some transformation of DTO_TemperatureRecord
     
     try:
         #return the message
         return data
     except pydantic.ValidationError as e:
         #return the error message
-        return {"error": str(e)}
+        return {"Error while getting the data": str(e)}
     
