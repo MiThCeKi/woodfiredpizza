@@ -20,7 +20,6 @@ cloudwatch_handler = watchtower.CloudWatchLogHandler(log_group='Timestream-error
 logger.addHandler(cloudwatch_handler)
 
 
-
 # Format the DTO record to a Timestream-compatible record
 def DTO_record_to_timestream_record_micro_service(record: DTO_TemperatureRecord) -> dict:
     return {
@@ -35,6 +34,7 @@ def DTO_record_to_timestream_record_micro_service(record: DTO_TemperatureRecord)
         'MeasureValueType': 'DOUBLE',
         'Time': str(record.time)  # Ensure the time is in string format
     }
+
 
 def write_records_to_timestream(records: DTO_TemperatureResponse, batch_size: int = 99):
     """
@@ -77,7 +77,6 @@ def write_records_to_timestream(records: DTO_TemperatureResponse, batch_size: in
         print(f"Error preparing records for Timestream: {e}")
      
     
-
    
 fake_temperature_DTO = generate_fake_temperature_data(400)
 write_records_to_timestream(fake_temperature_DTO)  # Writes to Timestream
