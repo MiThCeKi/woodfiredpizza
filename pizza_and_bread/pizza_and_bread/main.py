@@ -31,8 +31,10 @@ async def get_temperature() -> DTO_TemperatureResponse | None:
     Returns: a DTO_TemperatureResponse object created from the records in the Timestream dict pulled by the query
     """
     try: 
+        #use the query service to get a response
         query_response = query_records_from_timestream(queries.GET_RECENT_RECORDS.value)
         
+        #from the response, create a record.
         records = [
             {
                 "time": row['time'],
@@ -42,11 +44,12 @@ async def get_temperature() -> DTO_TemperatureResponse | None:
             }
             for row in query_response
         ]
-
-        response_records = [TimestreamRecord(**record) for record in records]
+        
+        #with pydantic I can just use the unpacking operator to create a DTO_TemperatureRecord object
+        response_records = [DTO_TemperatureRecord(**record) for record in records]
              
-
-        return TimestreamResponse(records=response_records)
+        #again, with pydantic I can just use the unpacking operator to create a DTO_TemperatureResponse object
+        return DTO_TemperatureResponse(records=response_records)
     
     except Exception as e:
         
