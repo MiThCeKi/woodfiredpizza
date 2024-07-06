@@ -18,6 +18,13 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/pizza_and_bread/pizza_and_bread",
+        },
+        {
+            "name": "Python Debugger: Main",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pizza_and_bread.main",
+            "cwd": "${workspaceFolder}/pizza_and_bread",
         }
     ]
 }

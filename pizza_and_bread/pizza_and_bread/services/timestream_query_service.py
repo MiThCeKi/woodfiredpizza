@@ -9,7 +9,6 @@ boto3.setup_default_session(profile_name='pizzabread')
 # configure logging using logging and watchtower
 logger = set_up_logging(log_group='Timestream-query-errors', stream_name='pizza-bread-timestream')
 
-
 # use boto3 to send the query to timestream
 
 def query_records_from_timestream(query: str) -> dict:

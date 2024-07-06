@@ -14,9 +14,10 @@ Id = type(str)
 
 class DTO_TemperatureRecord(BaseModel):
     #Docstring: this is a serializable model that FastAPI expects to work with. 
-    temperature: float
+    measure_value: float
     time: str
     session_id: str
+    measure_name: str
 
 class DTO_TemperatureResponse(BaseModel):
     records: List[DTO_TemperatureRecord]
