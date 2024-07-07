@@ -4,6 +4,8 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+        
         {
             "name": "Python Debugger: Services",
             "type": "debugpy",
@@ -25,6 +27,24 @@
             "request": "launch",
             "module": "pizza_and_bread.main",
             "cwd": "${workspaceFolder}/pizza_and_bread",
+        }, 
+        {
+            "name": "PizzaServer",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "pizza_and_bread.main:app",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000",
+                "--reload"
+            ],
+            "jinja": true,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
         }
     ]
 }
