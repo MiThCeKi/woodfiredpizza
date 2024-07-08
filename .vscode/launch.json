@@ -25,7 +25,7 @@
             "name": "Python Debugger: Main",
             "type": "debugpy",
             "request": "launch",
-            "module": "pizza_and_bread.main",
+            "module": "pizza_and_bread.app.main",
             "cwd": "${workspaceFolder}/pizza_and_bread",
         }, 
         {
@@ -34,7 +34,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "pizza_and_bread.main:app",
+                "pizza_and_bread.app.endpoints:router1",
                 "--host",
                 "127.0.0.1",
                 "--port",
